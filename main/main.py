@@ -48,9 +48,6 @@ main.get_recording()#顺便把这行注释掉
 #如果要启用界面UI和打字功能，取消下面的注释和上面函数dazi的注释
 # root = tk.Tk()
 # root.title("简单的Tkinter应用")
-# background_image = tk.PhotoImage(file="wow.png")
-# background_label = tk.Label(root, image=background_image)
-# background_label.place(x=0, y=0, relwidth=1, relheight=1)
 # label = tk.Label(root, text="欢迎来到Tkinter!")
 # label.pack()
 # entry = tk.Entry(root)
