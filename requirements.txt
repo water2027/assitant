@@ -1,0 +1,7 @@
+pygame
+openai
+sounddevice
+scipy
+matplotlib
+azure.cognitiveservices.speech
+requests
