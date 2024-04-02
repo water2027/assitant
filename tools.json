@@ -1,0 +1,73 @@
+[
+    {
+    "type": "function",
+    "function": {
+      "name": "get_current_weather",
+      "description": "Get the current weather in a given location",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string",
+            "description": "The city and state, e.g. San Francisco, CA"
+          },
+          "unit": {"type": "string", "enum": ["celsius", "fahrenheit"]}
+        },
+        "required": ["location"]
+      }
+    }
+    },
+    {
+    "type": "function",
+    "function": {
+      "name": "code_interpreter",
+      "description": "执行完整的python代码并将控制台输出的结果返回给你。只有用户明确表示使用此tool时才会使用。",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "需要执行的完整代码。这由你提供。"
+          }
+        }
+      }
+    }
+    },
+    {
+    "type": "function",
+    "function": {
+      "name": "get_image",
+      "description": "根据给出的图片路径和需求，分析图片",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "image_url": {
+            "type": "string",
+            "description": "图片的URL地址或者本地路径"
+          },
+          "msg": {
+            "type": "string",
+            "description": "用户希望怎么分析图片"}
+        },
+        "required": ["image_url", "msg"]
+      }
+    }
+    },
+    {
+    "type": "function",
+    "function": {
+      "name": "get_file",
+      "description": "根据给出的文件路径，读取文件",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "file_url": {
+            "type": "string",
+            "description": "文件路径"
+          }
+        },
+        "required": ["file_url"]
+      }
+    }
+    }
+]
